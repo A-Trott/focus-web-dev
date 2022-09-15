@@ -1,0 +1,43 @@
+body *{
+    box-sizing: border-box;
+    background-color:aqua;
+    margin:0;
+}
+.scene{
+    background-color: rgb(165, 17, 17);
+    perspective: 700px;
+    perspective-origin: center 25%;
+    transform-style: preserve-3d;
+    height: 80vh;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.floor{
+    background-image: rgb(110, 26, 26);
+    height:60rem;
+    width:60rem;
+    transform-style: preserve-3d;
+    transform: rotateX(90deg) rotateZ(45deg);
+    box-shadow: inset 5rem 5rem 25rem 10rem #101137;
+}
+.object{
+    position: absolute;
+}
+.object-front{
+    position:absolute;
+    transform-style: preserve-3d;
+    height: 5rem;
+    width:5rem;
+    background-color:rgba(71, 197, 59, 0.5);
+}
+.object-left{
+    position:absolute;
+    transform-style: preserve-3d;
+    height: 5rem;
+    width:5rem;
+    background-color:rgba(71, 197, 59, 0.5);
+    transform: rotateX(45deg);
+}

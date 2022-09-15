@@ -1,0 +1,28 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    background-repeat: no-repeat;
+    background: rgb(30,29,94);
+    background: radial-gradient(circle, rgb(57, 221, 164) 0%, rgb(7, 52, 36) 50%, rgb(2, 2, 5) 100%);
+}
+main{
+    position: absolute;
+    top: 29%;
+    padding:.5rem;
+    width:70%;
+    max-width: 40rem;
+    left:15%;
+    display: flex;
+    background-color: aqua;
+}
+main > *{
+    padding: 1rem;
+    border: 2px solid rgb(31, 18, 83);
+}
+#demo{
+    text-align: center;
+    margin:auto;
+}

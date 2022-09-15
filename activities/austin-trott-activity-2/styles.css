@@ -1,0 +1,64 @@
+nav {
+  background-color: rgb(12, 10, 14);
+  height: 50px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.nav-container>a:link {
+  text-decoration: none;
+  text-align: center;
+  flex-basis: 100px;
+}
+
+.nav-link-1 {
+  color: rgb(255, 138, 138);
+}
+
+.nav-link-1:visited {
+  color: rgb(127, 68, 56);
+}
+
+.nav-link-2 {
+  color: rgb(248, 217, 105);
+}
+
+.nav-link-2:visited {
+  color: rgb(138, 122, 63);
+}
+
+.nav-link-3 {
+  color: rgb(104, 255, 81);
+  margin-right: auto;
+}
+
+.nav-link-3:visited {
+  color: rgb(48, 119, 37);
+}
+
+.nav-link-4 {
+  color: rgb(134, 243, 255);
+}
+
+.nav-link-4:visited {
+  color: rgb(66, 117, 122);
+}
+
+.nav-link-5 {
+  color: rgb(186, 103, 255);
+}
+
+.nav-link-5:visited {
+  color: rgb(139, 71, 195);
+}
+
+.nav-container>a:hover {
+  filter: brightness(250%);
+  text-decoration: underline;
+  font-size: 1.2rem;
+}

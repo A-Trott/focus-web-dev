@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Project 1 - About</title>
+  </head>
+  <body>
+    <header>
+      <img class="header__icon icon" src="./assets/cat-profile.jpg" alt="Girl in a jacket">
+      <a class="header__title" href="./index.html">
+        <h1 class="header__title">Meow Meow</h1>
+      </a>  
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="../austin-trott-project-1/index.html">Home</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="../austin-trott-project-1/about.html">About</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="../austin-trott-project-1/recipes.html">Recipe's</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="../austin-trott-project-1/resources.html">Resources</a>
+          </li>
+        </ul>
+      </nav>
+    </header> 
+    <main>
+      <section class="content">
+        <article class="content__blurb">
+          <h2>About Me</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum voluptatum quae fuga? Nostrum magni esse delectus adipisci eaque vero molestiae ipsa repudiandae beatae numquam tempore eligendi, maxime doloremque! Libero, consequatur.</p>
+          <br>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nisi similique illum tenetur dolorem, vel laudantium, corrupti voluptatem dolorum placeat nobis! Enim minima fuga eum sed minus assumenda iure officiis!</p>
+        </article>
+        <img class="content__picture" src="./assets/mai-mai_square.jpg" alt="mai mai">
+      </section>
+      <section class="content" id="contact">
+        <form action="" class="content__contact-form">
+          <h2 class="contact-form__header"> Contact Form</h2>
+            <div class="contact-form__info">
+                <div class="contact-form__info--name">
+                  <label for="password">Name:</label>
+                  <input type="text" id="name" placeholder="meow meow">
+                </div>
+                <div class="contact-form__info--email">
+                  <label for="email">Email:</label>
+                  <input id="email" type="email" placeholder="example@emeow.com">
+              </div>
+            </div>
+            <div class="contact-form__email-text">
+              <label for="email-text">What do you want to say?</label>
+              <textarea name="email-text" id="email-text" cols="30" rows="10">I like kitties</textarea>
+            </div>
+            <button type="submit" id="submit-buttton">Send Email</button>
+          </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-container__item">
+            <h4 class="footer-container__header">Want to see more?</h4>
+            <div class="footer-container__content">
+              <a href="https://www.facebook.com" target="_blank">Facebook</a>
+              <a href="https://www.instagram.com" target="_blank">Instagram</a>
+              <a href="https://www.youtube.com" target="_blank">Youtube</a>
+            </div>  
+        </div>
+        <img class="icon" src="./assets/cat-profile.jpg" alt="Girl in a jacket">
+        <div class="footer-container__item">
+          <h4 class="footer-container__header">Reach out!</h4>
+          <div class="footer-container__content">
+              <a href="https://www.facebook.com" target="_blank">Facebook</a>
+              <a href="https://www.instagram.com" target="_blank">Instagram</a>
+              <a href="./about.html#contact">Email</a>
+          </div>
+        </div>
+      </div>
+      <span>copyright meow meow</span>
+    </footer>
+  </body>

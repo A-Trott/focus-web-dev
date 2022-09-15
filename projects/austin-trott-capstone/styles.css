@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+
+    font-family: cursive;
+}
+:root
+
+/* ============================================= Header ==== */
+header
+nav
+.nav__menu
+.nav__menu-item
+.nav__menu-item__link
+/* ============================================= Main ====== */
+/* ============================================= Hero ====== */
+.hero
+.hero__content
+.hero__image-container
+/* ============================================= Sub-Hero == */
+.sub-hero
+.sub-hero__image-container
+.sub-hero__content
+/* ============================================= Body-A ==== */
+.body-a
+.body-a__title
+.body-a__card-container
+.body-a__card
+.body-a__card__title
+.body-a__card__text
+.body-a__card__button
+
+/* ============================================= Body-B ==== */
+.body-b
+.body-b__title
+.body-b__subtitle
+.body-b__thumbnail-container
+.body-b__thumbnail-container__item
+/* ============================================= Body-C ==== */
+.body-resource__card
+.body-resource__card__title
+.body-resource__card__content
+/* ============================================= DP-Card === */
+.dp-card
+.dp-card__display
+.dp-card__bottom-overlay
+.dp-card__bottom-overlay__title
+.dp-card__bottom-overlay__text
+
+/* ============================================= Contact === */
+.contact
+.contact__title-container
+.contact__title-container__title
+.contact__title-container__subtitle
+.contact__form
+/* ============================================= Footer ==== */
+.footer-container
+.footer-container-links

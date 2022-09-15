@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge 2</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <form action="">
+        <h1 class="form__header"> Create an Account</h1>
+        <div class="form__account-info">
+            <div class="form__account-info--email">
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="example@email.com">
+            </div>
+            <div class="form__account-info--password">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="meowmeow">
+            </div>
+        </div>
+        <div class="form__age-dropdown">
+            <label for="age">Age:</label>
+            <select name="age" id="age">
+                <option value="" id="age">Select Age</option>
+                <option value="18-25" id="age">18-25</option>
+                <option value="26-30" id="age">26-30</option>
+                <option value="31-40" id="age">31-40</option>
+                <option value="40+" id="age">40+</option>
+            </select>
+        </div>
+        <div class="form__introduction">
+            <label for="introduction">Tell us a little about yourself:</label>
+            <textarea name="introduction" id="introduction" cols="30" rows="10">I like kitties</textarea>
+        </div>
+        <div class="form__tos-checkbox">
+            <input type="checkbox"  id="tos" name="tos" value="checked" required>
+            <label for="tos"> I agree to the <a href="https://www.google.com" target="_blank">terms of service</a> </label>
+        </div>
+        <button type="submit" id="submit-buttton">Sign up</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 1rem .5rem;
+    margin:1rem;
+    width: 50rem;
+    gap: 1rem;
+    background-color: lightgoldenrodyellow;
+}
+input{
+    border:1px double black;
+    border-width: 3px;
+}
+select{
+    border:1px double black;
+    border-width: 3px;
+}
+textarea{
+    border:1px double black;
+    border-width: 3px;  
+}
+button{
+    width:fit-content;
+    }
+.form__header{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.form__account-info{
+    display:flex;
+    flex-direction:column;
+    width:25%;
+    gap:1rem;
+}
+
+.form__account-info--email{
+border:1px double black;
+border-width:3px;
+padding:2px;
+background-color: aquamarine;
+}
+
+.form__account-info--password{
+    border:1px double black;
+    border-width:3px;
+    padding:2px;
+    background-color: bisque;
+}
+.form__age-dropdown{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    border:1px double black;
+    border-width:3px;
+    padding:2px;
+    background-color: lightcoral;
+}
+.form__introduction{
+    display:flex;
+    flex-direction:column;
+    padding:2px;
+    width:60%;
+    border:1px double black;
+    border-width:3px;
+    background-color: lightpink;
+}
+#age{
+    width:fit-content;
+}
