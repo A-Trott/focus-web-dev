@@ -1,57 +1,148 @@
 * {
     box-sizing: border-box;
-
     font-family: cursive;
 }
-:root
-
+:root{}
+li{
+    list-style: none;
+}
+h4{
+    margin:0;
+}
+body{background-color: black;}
+section{
+    height: 90vh;
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+}
 /* ============================================= Header ==== */
-header
-nav
-.nav__menu
-.nav__menu-item
-.nav__menu-item__link
+header{
+    display:flex;
+    width: 100%;
+    height: 10vh;
+    background-color: aquamarine;
+}
+nav{
+    display:flex;
+    justify-items: space-between;
+
+}
+.nav__menu{
+    display:flex;
+    gap:.5rem;
+
+
+}
+.nav__menu-item{}
+.nav__menu-item__link{}
 /* ============================================= Main ====== */
 /* ============================================= Hero ====== */
-.hero
-.hero__content
-.hero__image-container
+.hero{
+    height: 95vh;
+    background-color: azure;
+    display:flex;
+    padding: 0;
+    margin-top: 0rem;
+}
+.hero__content{
+    width:50%;
+    height: 10rem;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-left:2.5rem;
+}
+.hero__image-container{
+    width:50%;
+    border: 1px solid black;
+    bor
+    border: 15px solid #0000004D
+}
 /* ============================================= Sub-Hero == */
-.sub-hero
-.sub-hero__image-container
-.sub-hero__content
+.sub-hero{
+    height: 60vh;
+    display:flex;
+
+    background-color:blanchedalmond;
+}
+.sub-hero__image-container{
+    width:50%;
+    border: 1px solid black;
+}
+.sub-hero__content{
+    width:50%;
+}
 /* ============================================= Body-A ==== */
-.body-a
-.body-a__title
-.body-a__card-container
-.body-a__card
-.body-a__card__title
-.body-a__card__text
-.body-a__card__button
+.body-a{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    height: 90vh;
+    background-color:rgb(203, 190, 171);
+}
+.body-a__title{}
+.body-a__card-container{
+    display:flex;
+    justify-content:space-between;
+    gap:2.5rem;
+  
+}
+.body-a__card{
+    width:50%;
+
+}
+.body-a__card__title{}
+.body-a__card__text{}
+.body-a__card__button{}
 
 /* ============================================= Body-B ==== */
-.body-b
-.body-b__title
-.body-b__subtitle
-.body-b__thumbnail-container
-.body-b__thumbnail-container__item
+.body-b{
+
+    height: 90vh;
+    background-color:rgb(237, 234, 230);
+}
+.body-b__title{}
+.body-b__subtitle{}
+.body-b__thumbnail-container{}
+.body-b__thumbnail-container__item{}
 /* ============================================= Body-C ==== */
-.body-resource__card
-.body-resource__card__title
-.body-resource__card__content
+.body-resource__card{}
+.body-resource__card__title{}
+.body-resource__card__content{}
 /* ============================================= DP-Card === */
-.dp-card
-.dp-card__display
-.dp-card__bottom-overlay
-.dp-card__bottom-overlay__title
-.dp-card__bottom-overlay__text
+.dp-card{}
+.dp-card__display{}
+.dp-card__bottom-overlay{}
+.dp-card__bottom-overlay__title{}
+.dp-card__bottom-overlay__text{}
 
 /* ============================================= Contact === */
-.contact
-.contact__title-container
-.contact__title-container__title
-.contact__title-container__subtitle
-.contact__form
+.contact{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color:rgb(237, 234, 230);
+}
+.contact__title-container{}
+.contact__title-container__title{}
+.contact__title-container__subtitle{}
+/* ============================================= Contact === */
+.contact-form{
+    border:1px solid black;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.contact-form__header{}
+.contact-form__content{}
+.contact-form__info{}
+.contact-form__email{}
+.contact-form__message{}
+.contact-form__submit-button{}
 /* ============================================= Footer ==== */
-.footer-container
-.footer-container-links
+.footer-container{
+    height: 10vh;
+}
+.footer-container-links{}

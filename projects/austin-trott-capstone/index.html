@@ -39,10 +39,10 @@
           <h1>FNTC Focus Web Development; Capstone</h1>
           <button>Learn Today!</button>
         </div>
-        <div class="hero__image"></div>
+        <div class="hero__image-container"></div>
       </section>
       <section class="sub-hero" id="html-hero">
-        <div class="sub-hero__image">
+        <div class="sub-hero__image-container">
           <a>image</a>
         </div>
         <div class="sub-hero__content">
@@ -50,15 +50,15 @@
         </div>
       </section>
       <section class="sub-hero" id="css-hero">
-        <div class="sub-hero__image">
+        <div class="sub-hero__image-container">
           <a>image</a>
         </div>
         <div class="sub-hero__content">
           <h2> Learn about CSS</h2>
-        </div>>
+        </div>
       </section>
       <section class="sub-hero" id="javascript-hero">
-        <div class="sub-hero__image">
+        <div class="sub-hero__image-container">
           <a>image</a>
         </div>
         <div class="sub-hero__content">
@@ -70,26 +70,28 @@
           <h2>Learn the concepts and apply <br> them to projects!</h2>
         </div>
         <div class="body-a__card-container">
-          <div class="body-a__card">
+          <article class="body-a__card">
             <h4>Lessons</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia recusandae blanditiis, praesentium possimus tempore nam totam dicta molestias omnis numquam ab, vel magnam repellendus. Sint impedit dignissimos repellendus officia.</p>
+            <p>ectetur adipisicing elit. Laborum officimos numquam ab, vel magnam repellendus. Sint impedit dignissimos repellendus officia.</p>
             <button>learn more</button>
-          </div>
-          <div class="body-a__card">
+          </article>
+          <article class="body-a__card">
             <h4>Activities</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio fugit quaerat perspiciatis, debitis a in quia quas aliquam labore quae earum nulla, nobis id possimus dolor ducimus, autem atque voluptatem?</p>
+            <p>Lorem ipsum dolor sit, amet consectetuio fugititis a in quia quas aliquam labore quae earum nulla, nobis id possimus dolor ducimus, autem atque voluptatem?</p>
             <button>learn more</button>
-          </div>
-          <div class="body-a__card">
+          </article>
+        </div>
+          <div class="body-a__card-container">
+          <article class="body-a__card">
             <h4>Challenges</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae rem saepe voluptas quia laboriosam assumenda architecto, veritatis quis numquam deserunt quod quae et maxime asperiores nesciunt aliquam nulla quibusdam suscipit?</p>
+            <p>Lorem ipsum dolor sit, amet cosauam deserunt quod quae et maxime asperiores nesciunt aliquam nulla quibusdam suscipit?</p>
             <button>learn more</button>
-          </div>
-          <div class="body-a__card">
+          </article>
+          <article class="body-a__card">
             <h4>Projects</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et labore sunt ipsam consequatur animi. Praesentium maxime minima, quisquam tenetur aliquid aut dolor culpa accusantium sunt, repellat veritatis nulla iure exercitationem!</p>
+            <p>Lorem, ipsum dolor sit amet conam teneaut dolor culpa accusantium sunt, repellat veritatis nulla iure exercitationem!</p>
             <button>learn more</button>
-          </div>
+          </article>
         </div>
       </section>
       <section class="body-b">
@@ -114,27 +116,21 @@
         </div>
       </section>
       <section class="contact">
-        <div class="contact__title-container">
+        
           <h2 id="contact__title"> Ready to Focus?</h2>
           <h3 id="contact__subtitle"> You too can Learn Web Development! <br> Don't be afraid to sign up today!</h3>
-        </div>
-        <form action="" class="content__contact-form">
+        
+        <form action="" class="contact-form">
           <h4 class="contact-form__header"> Apply now, limited seats available</h4>
-            <div class="contact-form__info">
-                <div class="contact-form__info--name">
-                  <label for="password">Name:</label>
-                  <input type="text" id="name" placeholder="meow meow">
+                <div class="contact-form__info">
+                  <input type="text" id="first-name" placeholder="First name">
+                  <input type="text" id="last-name" placeholder="Last name">
                 </div>
-                <div class="contact-form__info--email">
-                  <label for="email">Email:</label>
-                  <input id="email" type="email" placeholder="example@emeow.com">
+                <div class="contact-form__info">
+                  <input id="email" type="email" placeholder="Email adress">
               </div>
-            </div>
-            <div class="contact-form__email-text">
-              <label for="email-text">What do you want to say?</label>
-              <textarea name="email-text" id="email-text" cols="30" rows="10">I like kitties</textarea>
-            </div>
-            <button type="submit" id="submit-buttton">Send Email</button>
+              <textarea name="message-content" id="message-content" cols="30" rows="5">Enter message here</textarea>
+            <button type="submit" class="contact-form__submit-buttton">Send Email</button>
           </form>
       </section>
     </main>
