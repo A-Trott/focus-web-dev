@@ -2,147 +2,264 @@
     box-sizing: border-box;
     font-family: cursive;
 }
-:root{}
-li{
+:root {
+    --primary-color:#efefef;
+    --secondary-color: rgb(255, 255, 255);
+    --dark-color:rgb(203, 190, 171);
+}
+
+li {
     list-style: none;
 }
-h4{
-    margin:0;
+.logo{
+    padding:1rem;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#444cf7 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #444cf7 8px, #e5e5f7 8px) -4px 0;
+    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+    
 }
-body{background-color: black;}
-section{
+.image{
+
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#444cf7 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #444cf7 8px, #e5e5f7 8px) -4px 0;
+    background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+}
+h1{
+    font-size:5rem;
+}
+h2{
+    font-size: 4rem;
+    margin: 0;
+}
+h3{
+    font-size: 2.7rem;
+    margin: 0;
+}
+h4 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+button{
+    background-color: rgb(106, 180, 255);
+    padding:1rem 2rem 1rem 2rem;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+body {
+    margin:0;
+    background-color: rgb(143, 127, 127);
+}
+section {
     height: 90vh;
     padding: 2.5rem;
     margin-top: 2.5rem;
+    margin:2rem;
+    background-color: var(--primary-color);
 }
 /* ============================================= Header ==== */
-header{
-    display:flex;
+header {
+    margin:0;
+    padding:1rem;
+    display: flex;
     width: 100%;
     height: 10vh;
-    background-color: aquamarine;
+    min-height: 5rem;
+    background-color: var(--dark-color);
 }
-nav{
-    display:flex;
-    justify-items: space-between;
 
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
 }
-.nav__menu{
-    display:flex;
-    gap:.5rem;
+.nav__menu-item {}
 
+.nav__menu-item__link {}
 
-}
-.nav__menu-item{}
-.nav__menu-item__link{}
 /* ============================================= Main ====== */
 /* ============================================= Hero ====== */
-.hero{
+.hero {
     height: 95vh;
-    background-color: azure;
-    display:flex;
+background-color: var(--secondary-color);
+    display: flex;
     padding: 0;
-    margin-top: 0rem;
+    margin: 0rem;
 }
-.hero__content{
-    width:50%;
-    height: 10rem;
-    margin-top:auto;
-    margin-bottom:auto;
-    padding-left:2.5rem;
+.hero__content {
+    width: 50%;
+    margin-top: 10%;
+    padding-left: 2.5rem;
 }
-.hero__image-container{
-    width:50%;
+.hero__image-container {
+    width: 50%;
     border: 1px solid black;
-    bor
-    border: 15px solid #0000004D
 }
-/* ============================================= Sub-Hero == */
-.sub-hero{
-    height: 60vh;
-    display:flex;
 
-    background-color:blanchedalmond;
+/* ============================================= Sub-Hero == */
+.sub-hero {
+    height: 60vh;
+    display: flex;
+    background-color: var(--primary-color);
 }
-.sub-hero__image-container{
-    width:50%;
+.sub-hero__image-container {
+    width: 50%;
     border: 1px solid black;
 }
-.sub-hero__content{
-    width:50%;
-}
-/* ============================================= Body-A ==== */
-.body-a{
+.sub-hero__content {
     display:flex;
-    flex-direction:column;
+    align-self:center;
+    width: 50%;
+    padding-left:2.5rem;
+    padding-bottom:5rem;
+}
+
+/* ============================================= Body-A ==== */
+.body-a {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     height: 90vh;
-    background-color:rgb(203, 190, 171);
 }
-.body-a__title{}
-.body-a__card-container{
-    display:flex;
-    justify-content:space-between;
-    gap:2.5rem;
-  
-}
-.body-a__card{
-    width:50%;
 
+.body-a__title {}
+
+.body-a__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
 }
-.body-a__card__title{}
-.body-a__card__text{}
-.body-a__card__button{}
+
+.body-a__card {
+    width: 50%;
+}
+
+.body-a__card__title {}
+
+.body-a__card__text {}
+
+.body-a__card__button {}
 
 /* ============================================= Body-B ==== */
-.body-b{
-
+.body-b {
     height: 90vh;
-    background-color:rgb(237, 234, 230);
+    display:flex;
+    padding:2.5rem;
 }
-.body-b__title{}
-.body-b__subtitle{}
-.body-b__thumbnail-container{}
-.body-b__thumbnail-container__item{}
+.body-b__column{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    gap:2rem;
+}
+.body-b__thumbnail-row{
+    display:flex;
+    flex-direction: row;
+    margin:2rem;
+    justify-content:space-between;
+}
+.body-b__thumbnail-row__item {
+    height: 7rem;
+    width: 14rem;
+    padding:1rem;
+}
+.body-b__title {}
+
+.body-b__subtitle {}
+
+
+
+
+
+
+/* ========================================Body-B __ DP-Card === */
+.dp-card {}
+
+.dp-card__display {
+    height:100%;
+    position: relative;
+}
+
+.dp-card__overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+/*     opacity:0; */
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.dp-card__bottom-overlay__title {}
+
+.dp-card__bottom-overlay__text {}
+
 /* ============================================= Body-C ==== */
-.body-resource__card{}
-.body-resource__card__title{}
-.body-resource__card__content{}
-/* ============================================= DP-Card === */
-.dp-card{}
-.dp-card__display{}
-.dp-card__bottom-overlay{}
-.dp-card__bottom-overlay__title{}
-.dp-card__bottom-overlay__text{}
+.body-resource__card {}
+
+.body-resource__card__title {}
+
+.body-resource__card__content {}
 
 /* ============================================= Contact === */
-.contact{
-    display:flex;
-    flex-direction:column;
+.contact {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background-color:rgb(237, 234, 230);
+    gap: 3rem;
+
 }
-.contact__title-container{}
-.contact__title-container__title{}
-.contact__title-container__subtitle{}
-/* ============================================= Contact === */
-.contact-form{
-    border:1px solid black;
-    padding: 2rem;
+
+.contact__container {
+    text-align: center;
+}
+
+/* ============================================= Contact-form === */
+.contact-form {
+    border: 1px solid black;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
-.contact-form__header{}
-.contact-form__content{}
-.contact-form__info{}
-.contact-form__email{}
-.contact-form__message{}
-.contact-form__submit-button{}
+
+.contact-form__header {}
+
+.contact-form__content {}
+
+.contact-form__info {}
+
+.contact-form__email {}
+
+.contact-form__message {}
+
+.contact-form__submit-button {}
+
 /* ============================================= Footer ==== */
-.footer-container{
+footer {
+    padding:1rem;
     height: 10vh;
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: center;
 }
-.footer-container-links{}
+footer >*{
+    padding:1rem;
+}
+
+.footer-container {}
+
+
+.center {
+    margin: auto;
+}
+
+.footer-container-links {}
