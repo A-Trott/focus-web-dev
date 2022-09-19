@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <title>Project 1 - Home</title>
+    <title>Project 1 - About</title>
   </head>
   <body>
     <header>
@@ -19,35 +19,49 @@
       <nav class="header-nav">
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a class="header-nav__link" href="./index.html">Home</a>
+            <a class="header-nav__link" href="../austin-trott-project-1/index.html">Home</a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link" href="./about.html">About</a>
+            <a class="header-nav__link" href="../austin-trott-project-1/about.html">About</a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link" href="./recipes.html">Recipe's</a>
+            <a class="header-nav__link" href="../austin-trott-project-1/recipes.html">Recipe's</a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link" href="./resources.html">Resources</a>
+            <a class="header-nav__link" href="../austin-trott-project-1/resources.html">Resources</a>
           </li>
         </ul>
       </nav>
     </header> 
     <main>
-      <section class="hero">
-        <h1 class="hero__title">Meow Meow</h1>
-        <a class="hero__subtitle" href="./recipes.html">
-          <h1 class="hero__subtitle">Cookbook</h1>
-        </a>
-      </section>
       <section class="content">
-        <img class="content__picture" src="./assets/cat-profile.jpg" alt="grumpy cat">
         <article class="content__blurb">
-          <h2>Delicious Nyam Nyams</h2>
+          <h2>About Me</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum voluptatum quae fuga? Nostrum magni esse delectus adipisci eaque vero molestiae ipsa repudiandae beatae numquam tempore eligendi, maxime doloremque! Libero, consequatur.</p>
           <br>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nisi similique illum tenetur dolorem, vel laudantium, corrupti voluptatem dolorum placeat nobis! Enim minima fuga eum sed minus assumenda iure officiis!</p>
         </article>
+        <img class="content__picture" src="./assets/mai-mai_square.jpg" alt="mai mai">
+      </section>
+      <section class="content" id="contact">
+        <form action="" class="content__contact-form">
+          <h2 class="contact-form__header"> Contact Form</h2>
+            <div class="contact-form__info">
+                <div class="contact-form__info--name">
+                  <label for="password">Name:</label>
+                  <input type="text" id="name" placeholder="meow meow">
+                </div>
+                <div class="contact-form__info--email">
+                  <label for="email">Email:</label>
+                  <input id="email" type="email" placeholder="example@emeow.com">
+              </div>
+            </div>
+            <div class="contact-form__email-text">
+              <label for="email-text">What do you want to say?</label>
+              <textarea name="email-text" id="email-text" cols="30" rows="10">I like kitties</textarea>
+            </div>
+            <button type="submit" id="submit-buttton">Send Email</button>
+          </form>
       </section>
     </main>
     <footer>
@@ -73,4 +87,3 @@
       <span>copyright meow meow</span>
     </footer>
   </body>
-</html>

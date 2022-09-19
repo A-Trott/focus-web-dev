@@ -1,18 +1,20 @@
 * {
     box-sizing: border-box;
     font-family: cursive;
+    margin:0;
 }
 :root {
     --primary-color:#efefef;
     --secondary-color: rgb(255, 255, 255);
     --dark-color:rgb(203, 190, 171);
 }
+body {
 
-li {
-    list-style: none;
+    background-color: rgb(143, 127, 127);
 }
+/* IMAGES */
 .logo{
-    padding:1rem;
+    
     background-color: #e5e5f7;
     opacity: 0.8;
     background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#444cf7 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #444cf7 8px, #e5e5f7 8px) -4px 0;
@@ -26,41 +28,66 @@ li {
     background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#444cf7 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #444cf7 8px, #e5e5f7 8px) -4px 0;
     background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
 }
+
+/* TEXT STYLING */
 h1{
-    font-size:5rem;
+    font-size:3rem;
 }
 h2{
-    font-size: 4rem;
-    margin: 0;
+    font-size: 2.5rem;
+
 }
 h3{
-    font-size: 2.7rem;
-    margin: 0;
+    font-size: 1.5rem;
+
 }
 h4 {
     font-size: 1.2rem;
-    margin: 0;
+
 }
+p{
+    margin-top:.5rem;
+    margin-bottom:.25rem;
+}
+a,  a:link{
+    text-decoration:none;  
+    font-weight:bold;
+}
+.title{
+    font-size: 2.5rem; 
+    font-weight:bold;  
+}
+.subtitle{
+    font-size: 1.5rem;
+    text-align:center;
+    font-weight:bold;
+
+}
+code{
+    font-family:monospace;
+    
+}
+li {
+    list-style: none;
+}
+/* BUTTONS */
 button{
     background-color: rgb(106, 180, 255);
-    padding:1rem 2rem 1rem 2rem;
+    padding:.5rem 1rem .5rem 1rem;
     border: 1px solid white;
     border-radius: 8px;
 }
-body {
-    margin:0;
-    background-color: rgb(143, 127, 127);
-}
+
 section {
     height: 90vh;
-    padding: 2.5rem;
+    padding: 1.5rem;
     margin-top: 2.5rem;
     margin:2rem;
     background-color: var(--primary-color);
 }
 /* ============================================= Header ==== */
 header {
-    margin:0;
+
     padding:1rem;
     display: flex;
     width: 100%;
@@ -68,24 +95,32 @@ header {
     min-height: 5rem;
     background-color: var(--dark-color);
 }
-
+.header__icon{
+    display:flex;
+}
+nav{
+    display:flex;
+}
 .nav__menu {
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+    flex-direction: row;
+gap:1rem;
+    align-items:center;
 }
-.nav__menu-item {}
+.nav__menu-item {
+}
 
 .nav__menu-item__link {}
 
 /* ============================================= Main ====== */
 /* ============================================= Hero ====== */
 .hero {
+    margin:0;
+    width:100%;
     height: 95vh;
-background-color: var(--secondary-color);
+    background-color: var(--secondary-color);
     display: flex;
     padding: 0;
-    margin: 0rem;
 }
 .hero__content {
     width: 50%;
@@ -100,26 +135,100 @@ background-color: var(--secondary-color);
 /* ============================================= Sub-Hero == */
 .sub-hero {
     height: 60vh;
+    min-height: 20rem;
     display: flex;
     background-color: var(--primary-color);
 }
+
 .sub-hero__image-container {
     width: 50%;
     border: 1px solid black;
 }
+
 .sub-hero__content {
-    display:flex;
-    align-self:center;
+    display: flex;
+    align-self: center;
     width: 50%;
-    padding-left:2.5rem;
-    padding-bottom:5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 5rem;
 }
 
+/* ============================================= Project-Display-Page == */
+.project-display {
+    height: 80vh;
+    min-height: 20rem;
+    display: flex;
+    background-color: var(--primary-color);
+}
+
+.project-display__image-container {
+    width: 50%;
+    border: 1px solid black;
+}
+
+.project-display__title {
+    display: flex;
+    align-self: center;
+    width: 50%;
+    padding-left: 2.5rem;
+    padding-bottom: 5rem;
+}
+
+/* ============================================= tabs == */
+.animate-fade {
+    position: relative;
+    animation: animatefade 0.4s;
+}
+
+@keyframes animatefade {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tabs {
+
+    width:50%;
+    border: 1px solid black;
+    overflow: hidden
+}
+
+.tabs__menu {
+    background-color: bisque;
+}
+
+.tabs__button {
+    background-color: brown;
+}
+
+.tabs__button:active {
+    background-color: aqua;
+}
+
+.tabs__button--active {
+    font-weight: bold;
+    background-color: blueviolet;
+}
+
+.tabs__content {
+    display: flex;
+    background-color: darkgray;
+    display: none;
+    height: 100%;
+    overflow:hidden;
+}
+
+.tabs__content--active {
+    display: block;
+}
 /* ============================================= Body-A ==== */
 .body-a {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 90vh;
 }
 
@@ -128,7 +237,7 @@ background-color: var(--secondary-color);
 .body-a__container {
     display: flex;
     justify-content: space-between;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .body-a__card {
@@ -144,24 +253,26 @@ background-color: var(--secondary-color);
 /* ============================================= Body-B ==== */
 .body-b {
     height: 90vh;
+    min-height: 35rem;
     display:flex;
-    padding:2.5rem;
+    padding:1.5rem;
 }
 .body-b__column{
     display:flex;
     flex-direction: column;
     width:50%;
+    height:100%;
     gap:2rem;
 }
 .body-b__thumbnail-row{
     display:flex;
     flex-direction: row;
-    margin:2rem;
+    margin:1rem;
     justify-content:space-between;
 }
 .body-b__thumbnail-row__item {
-    height: 7rem;
-    width: 14rem;
+    height: 100%;
+    width: 30%;
     padding:1rem;
 }
 .body-b__title {}
@@ -214,14 +325,9 @@ background-color: var(--secondary-color);
     justify-content: center;
     align-items: center;
     height: 80vh;
-    gap: 3rem;
-
+    min-height: 33rem;
+    gap: 2rem;
 }
-
-.contact__container {
-    text-align: center;
-}
-
 /* ============================================= Contact-form === */
 .contact-form {
     border: 1px solid black;
@@ -233,8 +339,6 @@ background-color: var(--secondary-color);
 
 .contact-form__header {}
 
-.contact-form__content {}
-
 .contact-form__info {}
 
 .contact-form__email {}
@@ -245,21 +349,22 @@ background-color: var(--secondary-color);
 
 /* ============================================= Footer ==== */
 footer {
+
     padding:1rem;
     height: 10vh;
     background-color: var(--dark-color);
     display: flex;
-    justify-content: center;
-}
-footer >*{
-    padding:1rem;
+
+    justify-content: space-between;
 }
 
-.footer-container {}
+.footer__links {}
 
 
-.center {
-    margin: auto;
-}
 
-.footer-container-links {}
+
+creating components and making divs for layout
+needs to change repeating elements from page specific to general
+
+col2 col3
+row1 row 2 = flex-direction column

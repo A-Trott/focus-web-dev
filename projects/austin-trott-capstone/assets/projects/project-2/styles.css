@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: cursive;
+}
+/*======================= Colour Themes ==================== */
+.default{
+    --background-color: rgb(36 34 38);
+    --primary-color: rgb(28 31 55);
+    --secondary-color: rgb(155 165 177);
+    --highlight-color: rgb(234 234 234);
+}
+.winter{
+    --background-color: rgb(108 182 242);
+    --primary-color: rgb(22 110 142);
+    --secondary-color: rgb(22 249 255);
+    --highlight-color: rgb(138 204 208);
+}
+.spring{
+    --background-color: rgb(230 206 217);
+    --primary-color: rgb(233 195 255);
+    --secondary-color: rgb(152 79 182);
+    --highlight-color: rgb(255 230 248);
+}
+.summer{
+    --background-color: #9dff9d;
+    --primary-color: #006826;
+    --secondary-color: #36ff00;
+    --highlight-color: #54c228;
+}
+.fall{
+    --background-color: rgb(232 134 40);
+    --primary-color: rgb(255 243 178);
+    --secondary-color: rgb(192 77 77);
+    --highlight-color: rgb(239 193 123);
+}
+/* =================== Headers ============================== */
+h1{
+    color: var(--secondary-color);
+}
+h2{
+    color:var(--secondary-color);
+    filter:saturate(.5);
+}
+h3{
+    color:var(--primary-color);
+    filter:brightness(50%);
+}
+/* ======================buttons============================ */
+button{
+    background-color: var(--secondary-color);
+    border-color:var(--primary-color);
+    color:var(--primary-color);
+    font-weight: bold;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 30%;
+}
+/* ===================== Main Elements ===================== */
+body{
+    background-color: var(--background-color);
+}
+body *{
+    border-radius: 2rem; 
+}
+header{
+    background-color: var(--primary-color);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    width:90%;
+    height:80vh;
+    margin:auto;
+    background-color: var(--highlight-color);
+}
+
+/* ======================= Results Section ====================== */
+#results__container{
+    width:80%;
+    max-width: 40rem;
+    display: none;
+    background-color: var(--highlight-color);
+}
+#calendar-div{
+    height: 23rem;
+    background-color: var(--primary-color);
+    width: 90%;
+    margin: auto;
+    border-radius: .5rem;
+}
+#calendar-div > *{
+    padding-top: 25%;
+}

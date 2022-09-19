@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__icon">
+        <a class="logo">image</a>
+        <p>text</p>
+      </div>
+      <nav>
+        <ul class="nav__menu">
+          <li class="nav__menu-item">
+            <a href="../index.html" class="nav__menu-item__link">Home</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="../pages/about.html" class="nav__menu-item__link">About</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="../pages/portfolio.html" class="nav__menu-item__link">Portfolio</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="../pages/learn.html" class="nav__menu-item__link">Learn</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="../pages/resources.html" class="nav__menu-item__link">Resources</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1>Project Showcase</h1>
+          <button>Check it out</button>
+        </div>
+        <div class="hero__image-container image"> Image</div>
+      </section>
+
+      <!--  need to add CSS file to tab 3 also need to fix links in project 1-->
+      <section class="project-display" id="project-1">
+          <div class="tabs">
+            <div class="tabs__menu">
+              <button class="tabs__button" data-for-tab="1">Preview</button>
+              <button class="tabs__button" data-for-tab="2">HTML</button>
+              <button class="tabs__button" data-for-tab="3">CSS</button>
+            </div>
+            <div class="tabs__content  animate-fade" data-tab="1">
+              <iframe
+              width="100%"
+              height="99%"
+              src="../assets/projects/project-1/index.html"
+              ></iframe>
+            </div>
+            <div class="tabs__content animate-fade" data-tab="2">
+              <pre>
+                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="./styles.css"&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"&gt;
+    &lt;title&gt;Project 1 - Home&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;img class="header__icon icon" src="./assets/cat-profile.jpg" alt="Girl in a jacket"&gt;
+      &lt;a class="header__title" href="./index.html"&gt;
+        &lt;h1 class="header__title"&gt;Meow Meow&lt;/h1&gt;
+      &lt;/a&gt;  
+      &lt;nav class="header-nav"&gt;
+        &lt;ul class="header-nav__list"&gt;
+          &lt;li class="header-nav__item"&gt;
+            &lt;a class="header-nav__link" href="./index.html"&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="header-nav__item"&gt;
+            &lt;a class="header-nav__link" href="./pages/about.html"&gt;About&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="header-nav__item"&gt;
+            &lt;a class="header-nav__link" href="./pages/recipes.html"&gt;Recipe's&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="header-nav__item"&gt;
+            &lt;a class="header-nav__link" href="./pages/resources.html"&gt;Resources&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt; 
+    &lt;main&gt;
+      &lt;section class="hero"&gt;
+        &lt;h1 class="hero__title"&gt;Meow Meow&lt;/h1&gt;
+        &lt;a class="hero__subtitle" href="./pages/recipes.html"&gt;
+          &lt;h1 class="hero__subtitle"&gt;Cookbook&lt;/h1&gt;
+        &lt;/a&gt;
+      &lt;/section&gt;
+      &lt;section class="content"&gt;
+        &lt;img class="content__picture" src="./assets/cat-profile.jpg" alt="grumpy cat"&gt;
+        &lt;article class="content__blurb"&gt;
+          &lt;h2&gt;Delicious Nyam Nyams&lt;/h2&gt;
+          &lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum voluptatum quae fuga? Nostrum magni esse delectus adipisci eaque vero molestiae ipsa repudiandae beatae numquam tempore eligendi, maxime doloremque! Libero, consequatur.&lt;/p&gt;
+          &lt;br&gt;
+          &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nisi similique illum tenetur dolorem, vel laudantium, corrupti voluptatem dolorum placeat nobis! Enim minima fuga eum sed minus assumenda iure officiis!&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+      &lt;div class="footer-container"&gt;
+        &lt;div class="footer-container__item"&gt;
+            &lt;h4 class="footer-container__header"&gt;Want to see more?&lt;/h4&gt;
+            &lt;div class="footer-container__content"&gt;
+              &lt;a href="https://www.facebook.com" target="_blank"&gt;Facebook&lt;/a&gt;
+              &lt;a href="https://www.instagram.com" target="_blank"&gt;Instagram&lt;/a&gt;
+              &lt;a href="https://www.youtube.com" target="_blank"&gt;Youtube&lt;/a&gt;
+            &lt;/div&gt;  
+        &lt;/div&gt;
+        &lt;img class="icon" src="./assets/cat-profile.jpg" alt="Girl in a jacket"&gt;
+        &lt;div class="footer-container__item"&gt;
+          &lt;h4 class="footer-container__header"&gt;Reach out!&lt;/h4&gt;
+          &lt;div class="footer-container__content"&gt;
+              &lt;a href="https://www.facebook.com" target="_blank"&gt;Facebook&lt;/a&gt;
+              &lt;a href="https://www.instagram.com" target="_blank"&gt;Instagram&lt;/a&gt;
+              &lt;a href="./about.html#contact"&gt;Email&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;span&gt;copyright meow meow&lt;/span&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+              </code>
+             </pre>
+        
+            </div>
+            <div class="tabs__content animate-fade" data-tab="3">
+        
+        woof woof
+            </div>
+          </div>
+        
+
+        <div class="project-display__title">
+          <h2>Project 1- HTML & CSS</h2>
+        </div>
+      </section>
+
+
+      <section class="sub-hero" id="css-hero">
+        <div class="sub-hero__image-container image">
+          <a>image</a>
+        </div>
+        <div class="sub-hero__content">
+          <h2>Project 2 - JavaScript</h2>
+        </div>
+      </section>
+
+
+      <section class="sub-hero" id="javascript-hero">
+        <div class="sub-hero__image-container image">
+          <a>image</a>
+        </div>
+        <div class="sub-hero__content">
+          <h2>Project 3 - Capstone</h2>
+        </div>
+      </section>
+
+
+
+
+
+
+      <section class="hero">
+        <div class="hero__content">
+          <h1>Activity Showcase</h1>
+          <button>Check it out!</button>
+        </div>
+        <div class="hero__image-container image"> Image</div>
+      </section>
+
+      <section class="body-b">
+        <div class="body-b__column">
+            <h2>Take a peak behind the scenes!</h2>
+            <h3>Hover thumbnails to preview  <br> Click thumbnail to stick to preview window</h3>
+          <div class="body-b__thumbnail-row">
+            <div class="body-b__thumbnail-row__item image">image</div>
+            <div class="body-b__thumbnail-row__item  image">image</div>
+            <div class="body-b__thumbnail-row__item  image">image</div>
+          </div>
+          <div class="body-b__thumbnail-row"> 
+            <div class="body-b__thumbnail-row__item  image">image</div>
+            <div class="body-b__thumbnail-row__item  image">image</div>
+            <div class="body-b__thumbnail-row__item  image">image</div>
+          </div>
+        </div>
+        <div class="body-b__column">
+          <div class="dp-card__display image">
+            image
+            <div class="dp-card__overlay">
+              <h4>Project Summary</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eum adipisci officia ea optio fugiat. Impedit soluta animi 
+                illum corrupti labore. Nisi, corporis voluptatem? Tempora 
+                eius, ex totam recusandae impedit explicabo?
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <section class="hero">
+        <div class="hero__content">
+          <h1>Challenge Showcase</h1>
+          <button>Check it out!</button>
+        </div>
+        <div class="hero__image-container image"> Image</div>
+      </section>
+      
+      <section class="body-b">
+        <div class="body-b__column">
+            <h2>Take a peak behind the scenes!</h2>
+            <h3>Hover thumbnails to preview  <br> Click thumbnail to stick to preview window</h3>
+          <div class="body-b__thumbnail-row">
+            <div class="body-b__thumbnail-row__item image">image</div>
+            <div class="body-b__thumbnail-row__item  image">image</div>
+            <div class="body-b__thumbnail-row__item  image">image</div>
+          </div>
+          <div class="body-b__thumbnail-row"> 
+            <div class="body-b__thumbnail-row__item  image">image</div>
+            <div class="body-b__thumbnail-row__item  image">image</div>
+            <div class="body-b__thumbnail-row__item  image">image</div>
+          </div>
+        </div>
+        <div class="body-b__column">
+          <div class="dp-card__display image">
+            image
+            <div class="dp-card__overlay">
+              <h4>Project Summary</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eum adipisci officia ea optio fugiat. Impedit soluta animi 
+                illum corrupti labore. Nisi, corporis voluptatem? Tempora 
+                eius, ex totam recusandae impedit explicabo?
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <section class="contact">
+
+          <h2 id="contact__title">Ready to Focus?</h2>
+          <h3 id="contact__subtitle">
+            You too can Learn Web Development! <br />
+            Don't be afraid to sign up today!
+          </h3>
+        <form action="" class="contact-form">
+          <h4 class="contact-form__header">
+            Apply now, limited seats available
+          </h4>
+          <div class="contact-form__info">
+            <input type="text" id="first-name" placeholder="First name" />
+            <input type="text" id="last-name" placeholder="Last name" />
+          </div>
+          <div class="contact-form__info">
+            <input id="email" type="email" placeholder="Email adress" />
+          </div>
+          <textarea
+            name="message-content"
+            id="message-content"
+            cols="30"
+            rows="5"
+          >Enter message here
+          </textarea>
+          <button type="submit" class="contact-form__submit-buttton">
+            Send Email
+          </button>
+        </form>
+      </section>
+    </main>
+
+
+
+
+
+
+    <footer>
+      <div class="logo">image</div>
+      <div class="center">link link link</div>
+      <span>this is a copyright</span>
+    </footer>
+  </body>
+  <script src="../scripts.js"></script>
+</html>
