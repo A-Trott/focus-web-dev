@@ -9,12 +9,12 @@
   </head>
   <body>
     <header>
-      <div class="header__icon">
+      <div class="flex-row">
         <a class="logo">image</a>
         <p>text</p>
       </div>
       <nav>
-        <ul class="nav__menu">
+        <ul class="flex-row">
           <li class="nav__menu-item">
             <a href="../index.html" class="nav__menu-item__link">Home</a>
           </li>
@@ -27,9 +27,6 @@
           <li class="nav__menu-item">
             <a href="../pages/learn.html" class="nav__menu-item__link">Learn</a>
           </li>
-          <li class="nav__menu-item">
-            <a href="../pages/resources.html" class="nav__menu-item__link">Resources</a>
-          </li>
         </ul>
       </nav>
     </header>
@@ -40,139 +37,360 @@
 
     <main>
       <section class="hero">
-        <div class="hero__content">
-          <h1>Project Showcase</h1>
-          <button>Check it out</button>
+        <div class="col50 flex-column">
+          <h1 class="title">Project Showcase</h1>
+          <button class="button">Check it out</button>
         </div>
-        <div class="hero__image-container image"> Image</div>
-      </section>
+        <div class="col50 image"> Image</div>
 
+      </section>
       <!--  need to add CSS file to tab 3 also need to fix links in project 1-->
       <section class="project-display" id="project-1">
-          <div class="tabs">
-            <div class="tabs__menu">
-              <button class="tabs__button" data-for-tab="1">Preview</button>
-              <button class="tabs__button" data-for-tab="2">HTML</button>
-              <button class="tabs__button" data-for-tab="3">CSS</button>
-            </div>
-            <div class="tabs__content  animate-fade" data-tab="1">
-              <iframe
-              width="100%"
-              height="99%"
-              src="../assets/projects/project-1/index.html"
-              ></iframe>
-            </div>
-            <div class="tabs__content animate-fade" data-tab="2">
-              <pre>
-                <code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-  &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;link rel="stylesheet" href="./styles.css"&gt;
-    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
-    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
-    &lt;link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"&gt;
-    &lt;title&gt;Project 1 - Home&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;header&gt;
-      &lt;img class="header__icon icon" src="./assets/cat-profile.jpg" alt="Girl in a jacket"&gt;
-      &lt;a class="header__title" href="./index.html"&gt;
-        &lt;h1 class="header__title"&gt;Meow Meow&lt;/h1&gt;
-      &lt;/a&gt;  
-      &lt;nav class="header-nav"&gt;
-        &lt;ul class="header-nav__list"&gt;
-          &lt;li class="header-nav__item"&gt;
-            &lt;a class="header-nav__link" href="./index.html"&gt;Home&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li class="header-nav__item"&gt;
-            &lt;a class="header-nav__link" href="./pages/about.html"&gt;About&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li class="header-nav__item"&gt;
-            &lt;a class="header-nav__link" href="./pages/recipes.html"&gt;Recipe's&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li class="header-nav__item"&gt;
-            &lt;a class="header-nav__link" href="./pages/resources.html"&gt;Resources&lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;
-    &lt;/header&gt; 
-    &lt;main&gt;
-      &lt;section class="hero"&gt;
-        &lt;h1 class="hero__title"&gt;Meow Meow&lt;/h1&gt;
-        &lt;a class="hero__subtitle" href="./pages/recipes.html"&gt;
-          &lt;h1 class="hero__subtitle"&gt;Cookbook&lt;/h1&gt;
-        &lt;/a&gt;
-      &lt;/section&gt;
-      &lt;section class="content"&gt;
-        &lt;img class="content__picture" src="./assets/cat-profile.jpg" alt="grumpy cat"&gt;
-        &lt;article class="content__blurb"&gt;
-          &lt;h2&gt;Delicious Nyam Nyams&lt;/h2&gt;
-          &lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum voluptatum quae fuga? Nostrum magni esse delectus adipisci eaque vero molestiae ipsa repudiandae beatae numquam tempore eligendi, maxime doloremque! Libero, consequatur.&lt;/p&gt;
-          &lt;br&gt;
-          &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nisi similique illum tenetur dolorem, vel laudantium, corrupti voluptatem dolorum placeat nobis! Enim minima fuga eum sed minus assumenda iure officiis!&lt;/p&gt;
-        &lt;/article&gt;
-      &lt;/section&gt;
-    &lt;/main&gt;
-    &lt;footer&gt;
-      &lt;div class="footer-container"&gt;
-        &lt;div class="footer-container__item"&gt;
-            &lt;h4 class="footer-container__header"&gt;Want to see more?&lt;/h4&gt;
+          <div class="col60 project-display__content">
+            <div class="dp-card">
+              <div class="tabs__menu">
+                <button class="tabs__button button" data-for-tab="1">Preview</button>
+                <button class="tabs__button button" data-for-tab="2">Description</button>
+                <button class="tabs__button button" data-for-tab="3">HTML</button>
+                <button class="tabs__button button" data-for-tab="4">CSS</button>
+              </div>
+              <div class="tabs__content no-overflow animate-fade" data-tab="1">
+                <iframe
+                width="101.5%"
+                height="100%"
+                src="../assets/projects/project-1/index.html"
+                ></iframe>
+              </div>
+              <div class="tabs__content animate-fade" data-tab="2">
+                <h4>Project Summary</h4>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eum adipisci officia ea optio fugiat. Impedit soluta animi 
+                illum corrupti labore. Nisi, corporis voluptatem? Tempora 
+                eius, ex totam recusandae impedit explicabo?
+                </p>
+              </div>
+            
+              <div class="tabs__content animate-fade" data-tab="3">
+                <pre>
+                  <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+              &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;link rel="stylesheet" href="./styles.css"&gt;
+                &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+                &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+                &lt;link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"&gt;
+                &lt;title&gt;Project 1 - Home&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;header&gt;
+                  &lt;img class="header__icon icon" src="./assets/cat-profile.jpg" alt="Girl in a jacket"&gt;
+                  &lt;a class="header__title" href="./index.html"&gt;
+                    &lt;h1 class="header__title"&gt;Meow Meow&lt;/h1&gt;
+                  &lt;/a&gt;  
+                  &lt;nav class="header-nav"&gt;
+                    &lt;ul class="header-nav__list"&gt;
+            &lt;li class="header-nav__item"&gt;
+              &lt;a class="header-nav__link" href="./index.html"&gt;Home&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="header-nav__item"&gt;
+              &lt;a class="header-nav__link" href="./pages/about.html"&gt;About&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="header-nav__item"&gt;
+              &lt;a class="header-nav__link" href="./pages/recipes.html"&gt;Recipe's&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="header-nav__item"&gt;
+              &lt;a class="header-nav__link" href="./pages/resources.html"&gt;Resources&lt;/a&gt;
+            &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/nav&gt;
+                &lt;/header&gt; 
+                &lt;main&gt;
+                  &lt;section class="hero"&gt;
+                    &lt;h1 class="hero__title"&gt;Meow Meow&lt;/h1&gt;
+                    &lt;a class="hero__subtitle" href="./pages/recipes.html"&gt;
+            &lt;h1 class="hero__subtitle"&gt;Cookbook&lt;/h1&gt;
+                    &lt;/a&gt;
+                  &lt;/section&gt;
+                  &lt;section class="content"&gt;
+                    &lt;img class="content__picture" src="./assets/cat-profile.jpg" alt="grumpy cat"&gt;
+                    &lt;article class="content__blurb"&gt;
+            &lt;h2&gt;Delicious Nyam Nyams&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum voluptatum quae fuga? Nostrum magni esse delectus adipisci eaque vero molestiae ipsa repudiandae beatae numquam tempore eligendi, maxime doloremque! Libero, consequatur.&lt;/p&gt;
+            &lt;br&gt;
+            &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nisi similique illum tenetur dolorem, vel laudantium, corrupti voluptatem dolorum placeat nobis! Enim minima fuga eum sed minus assumenda iure officiis!&lt;/p&gt;
+                    &lt;/article&gt;
+                  &lt;/section&gt;
+                &lt;/main&gt;
+                &lt;footer&gt;
+                  &lt;div class="footer-container"&gt;
+                    &lt;div class="footer-container__item"&gt;
+              &lt;h4 class="footer-container__header"&gt;Want to see more?&lt;/h4&gt;
+              &lt;div class="footer-container__content"&gt;
+                &lt;a href="https://www.facebook.com" target="_blank"&gt;Facebook&lt;/a&gt;
+                &lt;a href="https://www.instagram.com" target="_blank"&gt;Instagram&lt;/a&gt;
+                &lt;a href="https://www.youtube.com" target="_blank"&gt;Youtube&lt;/a&gt;
+              &lt;/div&gt;  
+                    &lt;/div&gt;
+                    &lt;img class="icon" src="./assets/cat-profile.jpg" alt="Girl in a jacket"&gt;
+                    &lt;div class="footer-container__item"&gt;
+            &lt;h4 class="footer-container__header"&gt;Reach out!&lt;/h4&gt;
             &lt;div class="footer-container__content"&gt;
-              &lt;a href="https://www.facebook.com" target="_blank"&gt;Facebook&lt;/a&gt;
-              &lt;a href="https://www.instagram.com" target="_blank"&gt;Instagram&lt;/a&gt;
-              &lt;a href="https://www.youtube.com" target="_blank"&gt;Youtube&lt;/a&gt;
-            &lt;/div&gt;  
-        &lt;/div&gt;
-        &lt;img class="icon" src="./assets/cat-profile.jpg" alt="Girl in a jacket"&gt;
-        &lt;div class="footer-container__item"&gt;
-          &lt;h4 class="footer-container__header"&gt;Reach out!&lt;/h4&gt;
-          &lt;div class="footer-container__content"&gt;
-              &lt;a href="https://www.facebook.com" target="_blank"&gt;Facebook&lt;/a&gt;
-              &lt;a href="https://www.instagram.com" target="_blank"&gt;Instagram&lt;/a&gt;
-              &lt;a href="./about.html#contact"&gt;Email&lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;span&gt;copyright meow meow&lt;/span&gt;
-    &lt;/footer&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-              </code>
-             </pre>
-        
-            </div>
-            <div class="tabs__content animate-fade" data-tab="3">
-        
-        woof woof
+                &lt;a href="https://www.facebook.com" target="_blank"&gt;Facebook&lt;/a&gt;
+                &lt;a href="https://www.instagram.com" target="_blank"&gt;Instagram&lt;/a&gt;
+                &lt;a href="./about.html#contact"&gt;Email&lt;/a&gt;
+            &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;span&gt;copyright meow meow&lt;/span&gt;
+                &lt;/footer&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;
+                </code>
+               </pre>
+              </div>
+              <div class="tabs__content animate-fade" data-tab="4">
+                <pre>
+                  <code>
+            /* ================Root================== */
+            :root{
+                /* site colours */
+                --bone: #eed1c3;
+                --nebula: #c9d8d5;
+                --coral-tree: #A56969;
+                --aqua-haze: #F6F9F8;
+                --roman: #ff5050;
+                --opal: #8ea7b0;
+                --dark: #270606;
+                /* font styling */
+                --title:'Permanent Marker', cursive;
+            }
+            *{
+                box-sizing:border-box;  margin:0; 
+                font-size:1rem;  font-family:Cairo, Roboto, Inter, Segoe ui, sans-serif;
+            }   
+            body{
+                min-width:320px;  width:100%;
+                background-color:var(--bone);
+            }
+            /* =================Headers================= */
+            header{
+                display:flex;  flex-direction:row;  justify-content:center;  align-content:center;  gap:.5rem; flex-wrap:wrap;
+                width:100%;  padding:.5rem;  position:sticky;  top:0px;
+                text-align:center;
+                background-color:var(--opal);
+            }
+            /* =================Sections================= */
+            section{
+                display:flex;  flex-direction:row;  flex-wrap:wrap;  justify-content:center;
+                padding:1rem;
+            }
+            /* =================Footers================= */
+            footer{
+                background-color:var(--opal);
+                color:var(--nebula);  text-align:center;
+            }
+            /* ====================Fonts===================== */
+            p{
+                color:var(--dark);
+            }
+            /* ==================Headings===================*/
+            h1{
+                font-size:4rem;  color:var(--aqua-haze);  font-family:var(--title);  font-weight:bolder;
+                line-height:3.8rem;
+                }
+            h2{
+                font-size:3rem;  color:var(--opal);   font-family:var(--title);
+                line-height:3rem;
+                padding-top:0px;  padding-left:0;  margin-bottom:1rem;
+                border-bottom:.2rem solid var(--bone); 
+                text-align:center;
+                }
+            h3{
+                font-size:20px;
+                line-height:22px;
+                }
+            h4{
+                font-size:18px;  color:var(--nebula);  font-family:var(--title);  text-align:center;
+            }
+            /* ======================Links==================== */
+            a,  a:link{
+                text-decoration:none;  font-weight:bold;
+            }
+            a:hover{
+                color:var(--roman);
+            }
+            /* ======================Icons======================== */
+            .icon{
+                align-self:center;
+                height:4rem;  width:4.2rem;
+                border-radius:50%;
+                object-fit:cover;
+            }
+            /* ====================Forms========================== */
+            form{
+                display:flex;  flex-direction:column;  gap:1rem;
+            }
+            form >*{
+                background-color: var(--nebula);
+            }
+            /* ===================Buttons========================== */
+            button{
+                background-color:var(--roman);
+            }
+            button:hover{
+                filter:brightness(50%)
+            }
+            /* ============Header-Nav===================== */
+            .header-nav{
+                align-self:center;
+                margin-left:auto;  padding-right:1rem;
+            }
+            .header-nav__list{
+                display:flex;  gap:0.5rem 1rem;  flex-wrap:wrap;
+                list-style:none;
+            }
+            .header-nav__link, .header-nav__link:link{
+                color:var(--coral-tree);  font-size:large;  font-family:var(--title);  text-shadow:.5px .5px var(--nebula);
+            }
+            /* ========================Hero======================== */
+            .hero{
+                display:flex;  flex-direction:column;  justify-content:center;  align-items:center;
+                height:90vh;
+                background-size:cover;  background-repeat:no-repeat;  background-image:url(./assets/hero-background.jpg);
+            }
+            .hero__title{
+                color:var(--opal);  text-shadow:2px 2px var(--coral-tree);
+                background:none;
+            }
+            .hero__subtitle{
+                color:var(--bone);  text-shadow:1px 2px var(--roman);
+                background:none;
+            }
+            /* ===============Content======================*/
+            .content >*{
+                width:50%;  min-width:300px;  padding:1rem; 
+                background-color:var(--aqua-haze)
+            }
+            .content:nth-of-type(odd){
+                background-color:var(--nebula);
+            }
+            .content:nth-of-type(odd) h2{
+                border-bottom:.2rem solid var(--nebula); 
+            }
+            .content:nth-of-type(even){
+                background-color:var(--bone);
+            }
+            .content:nth-of-type(even) h2{
+                border-bottom:.2rem solid var(--bone); 
+            }
+            
+            /* ====================Contact-Form==================== */
+            .contact-form__header{
+                background-color:var(--aqua-haze);
+            }
+            .contact-form__info{
+                display:flex;  flex-wrap:wrap;  justify-content:space-around;  
+            }
+            .contact-form__email-text{
+                display:flex;  flex-direction:column;
+                border:1px solid var(--dark);  
+            }
+            /* ================Footer-Container================= */
+            .footer-container{
+                display:flex;  flex-direction:row;  justify-content:space-around;
+            }
+            .footer-container__item{
+                flex-basis:33%;
+            }
+            .footer-container__content{
+                display:flex;  flex-direction:column;
+            }
+            .footer-container__content *{
+                color:var(--aqua-haze);  
+                text-align:center;
+            }
+                  </code>
+                </pre>
+              </div>
             </div>
           </div>
-        
-
-        <div class="project-display__title">
+        <div class=" col40 project-display__title">
           <h2>Project 1- HTML & CSS</h2>
+          <br />
+          <a class="button" href="../assets/projects/project-1/index.html" target="_blank">open in new tab</a>
         </div>
       </section>
+      </section>
+      <!--  need to add file data also need to fix links in project 2-->
+      <section class="project-display" id="project-2">
+          <div class="col60 project-display__content">
+            <div class="dp-card">
+              <div class="tabs__menu">
+                <button class="tabs__button button" data-for-tab="1">Preview</button>
+                <button class="tabs__button button" data-for-tab="2">Description</button>
+                <button class="tabs__button button" data-for-tab="3">HTML</button>
+                <button class="tabs__button button" data-for-tab="4">CSS</button>
+                <button class="tabs__button button" data-for-tab="5">JavaScript</button>
+              </div>
+              <div class="tabs__content no-overflow animate-fade" data-tab="1">
+                <iframe
+                width="100%"
+                height="100%"
+                src="../assets/projects/project-2/index.html"
+                ></iframe>
+              </div>
+              <div class="tabs__content animate-fade" data-tab="2">
+                <h4>Project Summary</h4>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eum adipisci officia ea optio fugiat. Impedit soluta animi 
+                illum corrupti labore. Nisi, corporis voluptatem? Tempora 
+                eius, ex totam recusandae impedit explicabo?
+                </p>
+              </div>
+              <div class="tabs__content animate-fade" data-tab="3">
+                <pre>
+                  <code>
 
+                </code>
+               </pre>
+              </div>
+              <div class="tabs__content animate-fade" data-tab="4">
+                <pre>
+                  <code>
 
-      <section class="sub-hero" id="css-hero">
-        <div class="sub-hero__image-container image">
-          <a>image</a>
-        </div>
-        <div class="sub-hero__content">
+                  </code>
+                </pre>
+              </div>
+              <div class="tabs__content animate-fade" data-tab="5">
+                <pre>
+                  <code>
+
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+        <div class="col40">
           <h2>Project 2 - JavaScript</h2>
+          <br />
+          <a class="button" href="../assets/projects/project-2/index.html" target="_blank">open in new tab</a>
         </div>
       </section>
+
+
 
 
       <section class="sub-hero" id="javascript-hero">
-        <div class="sub-hero__image-container image">
+        <div class="col60 image">
           <a>image</a>
         </div>
-        <div class="sub-hero__content">
+        <div class="col40">
           <h2>Project 3 - Capstone</h2>
         </div>
       </section>
@@ -183,15 +401,15 @@
 
 
       <section class="hero">
-        <div class="hero__content">
-          <h1>Activity Showcase</h1>
+        <div class="col50">
+          <h1 class="hero__title">Activity Showcase</h1>
           <button>Check it out!</button>
         </div>
-        <div class="hero__image-container image"> Image</div>
+        <div class="col50 image"> Image</div>
       </section>
 
       <section class="body-b">
-        <div class="body-b__column">
+        <div class="col50">
             <h2>Take a peak behind the scenes!</h2>
             <h3>Hover thumbnails to preview  <br> Click thumbnail to stick to preview window</h3>
           <div class="body-b__thumbnail-row">
@@ -205,17 +423,19 @@
             <div class="body-b__thumbnail-row__item  image">image</div>
           </div>
         </div>
-        <div class="body-b__column">
-          <div class="dp-card__display image">
-            image
-            <div class="dp-card__overlay">
-              <h4>Project Summary</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Eum adipisci officia ea optio fugiat. Impedit soluta animi 
-                illum corrupti labore. Nisi, corporis voluptatem? Tempora 
-                eius, ex totam recusandae impedit explicabo?
-              </p>
+        <div class="col50">
+          <div class="dp-card">
+            <div class="dp-card image">
+              image
+              <div class="dp-card__overlay">
+                <h4>Project Summary</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eum adipisci officia ea optio fugiat. Impedit soluta animi
+                  illum corrupti labore. Nisi, corporis voluptatem? Tempora
+                  eius, ex totam recusandae impedit explicabo?
+                </p>
+              </div>
             </div>
           </div>
 
@@ -226,15 +446,15 @@
 
 
       <section class="hero">
-        <div class="hero__content">
+        <div class="col50">
           <h1>Challenge Showcase</h1>
           <button>Check it out!</button>
         </div>
-        <div class="hero__image-container image"> Image</div>
+        <div class="col50 image"> Image</div>
       </section>
       
       <section class="body-b">
-        <div class="body-b__column">
+        <div class="col50">
             <h2>Take a peak behind the scenes!</h2>
             <h3>Hover thumbnails to preview  <br> Click thumbnail to stick to preview window</h3>
           <div class="body-b__thumbnail-row">
@@ -248,8 +468,8 @@
             <div class="body-b__thumbnail-row__item  image">image</div>
           </div>
         </div>
-        <div class="body-b__column">
-          <div class="dp-card__display image">
+        <div class="col50">
+          <div class="dp-card image">
             image
             <div class="dp-card__overlay">
               <h4>Project Summary</h4>

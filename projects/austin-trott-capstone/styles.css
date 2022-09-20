@@ -1,3 +1,4 @@
+/* ================================== || General Styles || ================================== */
 * {
     box-sizing: border-box;
     font-family: cursive;
@@ -8,28 +9,33 @@
     --secondary-color: rgb(255, 255, 255);
     --dark-color:rgb(203, 190, 171);
 }
+header {
+    padding:1rem;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    min-height: 5rem;
+    background-color: var(--dark-color);
+}
 body {
-
     background-color: rgb(143, 127, 127);
 }
-/* IMAGES */
-.logo{
-    
-    background-color: #e5e5f7;
-    opacity: 0.8;
-    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#444cf7 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #444cf7 8px, #e5e5f7 8px) -4px 0;
-    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
-    
+section {
+    height: 90vh;
+    min-height: 20rem;
+    margin: 2.5rem;
+    padding: 2rem 1rem;
+    display:flex;
+    background-color: var(--primary-color);
 }
-.image{
-
-    background-color: #e5e5f7;
-    opacity: 0.8;
-    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#444cf7 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #444cf7 8px, #e5e5f7 8px) -4px 0;
-    background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+footer {
+    padding:1rem;
+    height: 10vh;
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: space-between;
 }
-
-/* TEXT STYLING */
+/* ===== || TEXT STYLING || ===== */
 h1{
     font-size:3rem;
 }
@@ -56,6 +62,7 @@ a,  a:link{
 .title{
     font-size: 2.5rem; 
     font-weight:bold;  
+
 }
 .subtitle{
     font-size: 1.5rem;
@@ -70,116 +77,61 @@ code{
 li {
     list-style: none;
 }
-/* BUTTONS */
-button{
+
+/*===== || BUTTONS || ===== */
+.button{
     background-color: rgb(106, 180, 255);
     padding:.5rem 1rem .5rem 1rem;
-    border: 1px solid white;
+    border: none;
     border-radius: 8px;
+    max-width:10rem;
 }
-
-section {
-    height: 90vh;
-    padding: 1.5rem;
-    margin-top: 2.5rem;
-    margin:2rem;
-    background-color: var(--primary-color);
-}
-/* ============================================= Header ==== */
-header {
-
-    padding:1rem;
-    display: flex;
-    width: 100%;
-    height: 10vh;
-    min-height: 5rem;
-    background-color: var(--dark-color);
-}
-.header__icon{
-    display:flex;
-}
-nav{
-    display:flex;
-}
-.nav__menu {
-    display: flex;
-    flex-direction: row;
-gap:1rem;
-    align-items:center;
-}
-.nav__menu-item {
-}
-
-.nav__menu-item__link {}
-
-/* ============================================= Main ====== */
-/* ============================================= Hero ====== */
-.hero {
+iframe{
+    border:none;
     margin:0;
-    width:100%;
-    height: 95vh;
-    background-color: var(--secondary-color);
-    display: flex;
-    padding: 0;
-}
-.hero__content {
-    width: 50%;
-    margin-top: 10%;
-    padding-left: 2.5rem;
-}
-.hero__image-container {
-    width: 50%;
-    border: 1px solid black;
 }
 
-/* ============================================= Sub-Hero == */
-.sub-hero {
-    height: 60vh;
-    min-height: 20rem;
-    display: flex;
-    background-color: var(--primary-color);
-}
+/* ================================== || Utilities || ================================== */
 
-.sub-hero__image-container {
-    width: 50%;
-    border: 1px solid black;
-}
-
-.sub-hero__content {
-    display: flex;
+.col40{
     align-self: center;
-    width: 50%;
-    padding-left: 2.5rem;
-    padding-bottom: 5rem;
+    width: 40%;
+
+    padding-left: 1rem;
+    padding-right:1rem;
+}
+.col50{
+    width:50%;
+    height:100%;
+    padding-left: 1rem;
+    padding-right:1rem;
+}
+.col60{
+    width:60%;
+    height:100%;
+    padding-left: 1rem;
+    padding-right:1rem;
+}
+.flex-row {
+    display:flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.flex-column {
+    display:flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.no-overflow{
+    overflow:hidden
 }
 
-/* ============================================= Project-Display-Page == */
-.project-display {
-    height: 80vh;
-    min-height: 20rem;
-    display: flex;
-    background-color: var(--primary-color);
-}
 
-.project-display__image-container {
-    width: 50%;
-    border: 1px solid black;
-}
-
-.project-display__title {
-    display: flex;
-    align-self: center;
-    width: 50%;
-    padding-left: 2.5rem;
-    padding-bottom: 5rem;
-}
-
-/* ============================================= tabs == */
+/* ===== || Animations ||  ===== */
 .animate-fade {
     position: relative;
     animation: animatefade 0.4s;
 }
-
 @keyframes animatefade {
     from {
         opacity: .5;
@@ -189,109 +141,64 @@ gap:1rem;
     }
 }
 
-.tabs {
-
-    width:50%;
-    border: 1px solid black;
-    overflow: hidden
+/* ================================== || Sitewide || ================================== */
+/* IMAGES */
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.tabs__menu {
-    background-color: bisque;
+.image{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#444cf7 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #444cf7 8px, #e5e5f7 8px) -4px 0;
+    background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+    border:1px solid black;
 }
+/* ===== || Sections || ===== */
 
-.tabs__button {
-    background-color: brown;
+.hero {
+    margin:0;
+    width:100%;
+    height: 95vh;
+    background-color: var(--secondary-color);
+    padding: 0;
 }
-
-.tabs__button:active {
-    background-color: aqua;
+.sub-hero {
+    height: 60vh;
 }
-
-.tabs__button--active {
-    font-weight: bold;
-    background-color: blueviolet;
+.project-display {
+    height: 80vh;
 }
-
-.tabs__content {
-    display: flex;
-    background-color: darkgray;
-    display: none;
-    height: 100%;
-    overflow:hidden;
-}
-
-.tabs__content--active {
-    display: block;
-}
-/* ============================================= Body-A ==== */
 .body-a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 90vh;
-}
-
-.body-a__title {}
-
-.body-a__container {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-}
-
-.body-a__card {
-    width: 50%;
-}
-
-.body-a__card__title {}
-
-.body-a__card__text {}
-
-.body-a__card__button {}
-
-/* ============================================= Body-B ==== */
-.body-b {
-    height: 90vh;
     min-height: 35rem;
-    display:flex;
-    padding:1.5rem;
 }
-.body-b__column{
-    display:flex;
-    flex-direction: column;
-    width:50%;
-    height:100%;
-    gap:2rem;
-}
-.body-b__thumbnail-row{
-    display:flex;
-    flex-direction: row;
-    margin:1rem;
-    justify-content:space-between;
+.body-b {
+    min-height: 35rem;
 }
 .body-b__thumbnail-row__item {
     height: 100%;
     width: 30%;
     padding:1rem;
 }
-.body-b__title {}
-
-.body-b__subtitle {}
-
-
-
-
-
-
-/* ========================================Body-B __ DP-Card === */
-.dp-card {}
-
-.dp-card__display {
+.contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    min-height: 33rem;
+    gap: 2rem;
+}
+/* ================================== || Components || ================================== */
+/* ===== || display card - DP-Card || ===== */
+.dp-card {
     height:100%;
     position: relative;
+    border: 1px solid black;
+    overflow: hidden;
 }
-
+.dp-card:hover .dp-card__overlay {
+    opacity: 1;
+}
 .dp-card__overlay {
     position: absolute;
     bottom: 0;
@@ -300,41 +207,46 @@ gap:1rem;
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
-/*     opacity:0; */
+    opacity:0;
     color: white;
     font-size: 20px;
     padding: 20px;
     text-align: center;
 }
-
-.dp-card__bottom-overlay__title {}
-
-.dp-card__bottom-overlay__text {}
-
-/* ============================================= Body-C ==== */
-.body-resource__card {}
-
-.body-resource__card__title {}
-
-.body-resource__card__content {}
-
-/* ============================================= Contact === */
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    min-height: 33rem;
-    gap: 2rem;
+/* ===== || display card tabs || ===== */
+.tabs__menu {
+    background-color: bisque;
 }
-/* ============================================= Contact-form === */
+.tabs__button {
+    background-color: brown;
+    border-radius: 0px;
+}
+.tabs__button:active {
+    background-color: aqua;
+}
+.tabs__button--active {
+    font-weight: bold;
+    background-color: blueviolet;
+}
+.tabs__content {
+    background-color: darkgray;
+    display: none;
+    height:95%;
+    width:101%;
+    overflow: scroll;
+    overflow-x:visible;
+}
+.tabs__content--active {
+    display: block;
+}
+/* ===== || Contact-form || ===== */
 .contact-form {
     border: 1px solid black;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact-form__header {}
@@ -346,25 +258,3 @@ gap:1rem;
 .contact-form__message {}
 
 .contact-form__submit-button {}
-
-/* ============================================= Footer ==== */
-footer {
-
-    padding:1rem;
-    height: 10vh;
-    background-color: var(--dark-color);
-    display: flex;
-
-    justify-content: space-between;
-}
-
-.footer__links {}
-
-
-
-
-creating components and making divs for layout
-needs to change repeating elements from page specific to general
-
-col2 col3
-row1 row 2 = flex-direction column

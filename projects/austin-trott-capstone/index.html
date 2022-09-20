@@ -9,12 +9,12 @@
   </head>
   <body>
     <header>
-      <div class="header__icon">
-        <a class="logo">image</a>
+      <div class="flex-row">
+        <a class="image">image</a>
         <p>text</p>
       </div>
       <nav>
-        <ul class="nav__menu">
+        <ul class="flex-row">
           <li class="nav__menu-item">
             <a href="./index.html" class="nav__menu-item__link">Home</a>
           </li>
@@ -27,123 +27,124 @@
           <li class="nav__menu-item">
             <a href="./pages/learn.html" class="nav__menu-item__link">Learn</a>
           </li>
-          <li class="nav__menu-item">
-            <a href="./pages/resources.html" class="nav__menu-item__link">Resources</a>
-          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <div class="hero__content">
-          <h1>FNTC Focus Web Development: Capstone</h1>
-          <button>Learn Today!</button>
+      <section class="hero ">
+        <div class="col50 flex-column centerY">
+          <h1 class="title">FNTC Focus Web Development: Capstone</h1>
+          <button class="button">Learn Today!</button>
         </div>
-        <div class="hero__image-container image"> Image</div>
+        <div class="col50 image"> Image</div>
       </section>
 
 
       <section class="sub-hero" id="html-hero">
-        <div class="sub-hero__image-container image">
+        <div class="col50 image">
           <a>image</a>
         </div>
-        <div class="sub-hero__content">
+        <div class="col50 flex-column">
           <p class="title">Learn about HTML</p>
         </div>
       </section>
 
 
       <section class="sub-hero" id="css-hero">
-        <div class="sub-hero__image-container image">
+        <div class="col50 image">
           <a>image</a>
         </div>
-        <div class="sub-hero__content">
+        <div class="col50">
           <p class="title">Learn about CSS</p>
         </div>
       </section>
 
 
       <section class="sub-hero" id="javascript-hero">
-        <div class="sub-hero__image-container image">
+        <div class="col50 image">
           <a>image</a>
         </div>
-        <div class="sub-hero__content">
+        <div class="col50">
           <p class="title">Learn about JavaScript</p>
         </div>
       </section>
 
 
-      <section class="body-a" id="learning-links">
-        <div class="body-a__container">
-          <h2>
-            Learn the concepts and apply <br />
-            them to projects!
-          </h2>
-        </div>
-        <div class="body-a__container">
-          <article class="body-a__card">
-            <h4>Lessons</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, 
-              totam dignissimos. Saepe maxime consectetur doloremque in a? Earum, 
-              impedit exercitationem molestias inventore tempore facere delectus 
-              voluptatibus illum, nostrum, aspernatur nisi?
-            </p>
-            <button>learn more</button>
-          </article>
-          <article class="body-a__card">
-            <h4>Activities</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              neque asperiores voluptate. Veritatis architecto explicabo iure nisi
-              illum! Mollitia, vel. Ratione debitis atque, amet veniam iure deleniti
-              repudiandae repellat possimus.
-            </p>
-            <button>learn more</button>
-          </article>
-        </div>
-        <div class="body-a__container">
-          <article class="body-a__card">
-            <h4>Challenges</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quos 
-              rerum, voluptates laudantium amet minima earum voluptas unde officiis 
-              eligendi nulla aperiam natus harum incidunt, repellendus sapiente 
-              temporibus fugiat tenetur?
-            </p>
-            <button>learn more</button>
-          </article>
-          <article class="body-a__card">
-            <h4>Projects</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus 
-              aperiam dolor, distinctio laudantium, nihil dolore magni reprehenderit, 
-              voluptatem commodi autem aliquid. Ex expedita molestiae aperiam similique 
-              iusto tempore cumque. Aspernatur.
-            </p>
-            <button>learn more</button>
-          </article>
+      <section id="learning-links">
+        <div class="flex-column">
+          <div class="flex-row">
+            <h2>
+              Learn the concepts and apply <br />
+              them to projects!
+            </h2>
+          </div>
+          <div class="flex-row">
+            <article class="col50">
+              <h4>Lessons</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                totam dignissimos. Saepe maxime consectetur doloremque in a? Earum,
+                impedit exercitationem molestias inventore tempore facere delectus
+                voluptatibus illum, nostrum, aspernatur nisi?
+              </p>
+              <button>learn more</button>
+            </article>
+            <article class="col50">
+              <h4>Activities</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+                neque asperiores voluptate. Veritatis architecto explicabo iure nisi
+                illum! Mollitia, vel. Ratione debitis atque, amet veniam iure deleniti
+                repudiandae repellat possimus.
+              </p>
+              <button>learn more</button>
+            </article>
+          </div>
+          <div class="flex-row">
+            <article class="col50">
+              <h4>Challenges</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quos
+                rerum, voluptates laudantium amet minima earum voluptas unde officiis
+                eligendi nulla aperiam natus harum incidunt, repellendus sapiente
+                temporibus fugiat tenetur?
+              </p>
+              <button>learn more</button>
+            </article>
+            <article class="col50">
+              <h4>Projects</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
+                aperiam dolor, distinctio laudantium, nihil dolore magni reprehenderit,
+                voluptatem commodi autem aliquid. Ex expedita molestiae aperiam similique
+                iusto tempore cumque. Aspernatur.
+              </p>
+              <button>learn more</button>
+            </article>
+          </div>
         </div>
       </section>
 
 
       <section class="body-b">
-        <div class="body-b__column">
-            <h2>Take a peak behind the scenes!</h2>
-            <p class="subtitle">Hover thumbnails to preview  <br> Click thumbnail to stick to preview window</p>
-          <div class="body-b__thumbnail-row">
-            <div class="body-b__thumbnail-row__item image">image</div>
-            <div class="body-b__thumbnail-row__item  image">image</div>
-            <div class="body-b__thumbnail-row__item  image">image</div>
-          </div>
-          <div class="body-b__thumbnail-row"> 
-            <div class="body-b__thumbnail-row__item  image">image</div>
-            <div class="body-b__thumbnail-row__item  image">image</div>
-            <div class="body-b__thumbnail-row__item  image">image</div>
-          </div>
+        <div class="col50 flex-column">
+
+              <h2>Take a peak behind the scenes!</h2>
+              <p class="subtitle">Hover thumbnails to preview  <br> Click thumbnail to stick to preview window</p>
+              <div class="flex-row">
+                <div class="body-b__thumbnail-row__item image">image</div>
+                <div class="body-b__thumbnail-row__item  image">image</div>
+                <div class="body-b__thumbnail-row__item  image">image</div>
+              </div>
+              <div class="flex-row">
+                <div class="body-b__thumbnail-row__item  image">image</div>
+                <div class="body-b__thumbnail-row__item  image">image</div>
+                <div class="body-b__thumbnail-row__item  image">image</div>
+              </div>
+
         </div>
-        <div class="body-b__column">
-          <div class="dp-card__display image">
+        <div class="col50">
+          <div class="dp-card image">
             image
             <div class="dp-card__overlay">
               <h4>Project Summary</h4>
@@ -189,7 +190,7 @@
       </section>
     </main>
     <footer>
-      <div class="logo">image</div>
+      <div class="image">image</div>
       <div >link link link</div>
       <span>this is a copyright</span>
     </footer>

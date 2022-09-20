@@ -1,3 +1,5 @@
+
+/* ======== display card setup tabs function ========== */
 function setupTabs () {
     document.querySelectorAll(".tabs__button").forEach(button => {
       button.addEventListener("click", () => {
@@ -20,7 +22,7 @@ function setupTabs () {
   document.addEventListener("DOMContentLoaded", () => {
     setupTabs();
   
-    document.querySelectorAll(".tabs").forEach(tabsContainer => {
+    document.querySelectorAll(".dp-card").forEach(tabsContainer => {
       tabsContainer.querySelector(".tabs__menu .tabs__button").click();
     });
   });
