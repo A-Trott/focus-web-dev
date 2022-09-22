@@ -8,29 +8,24 @@
     <title>Learn</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a>image</a>
-        <span>text</span>
-      </div>
-      <nav>
-        <ul class="nav__menu">
-          <li class="nav__menu-item">
+    <header class="layout-bar">
+      <a class=" image">image</a>
+      <h1 class="layout-bar__title">FNTC Capstone</h1>
+      <nav class="layout-bar__nav">
+        <menu class="layout-bar__menu">
+          <li class="layout-bar__menu__item">
             <a href="../index.html" class="nav__menu-item__link">Home</a>
           </li>
-          <li class="nav__menu-item">
+          <li class="layout-bar__menu__item">
             <a href="../pages/about.html" class="nav__menu-item__link">About</a>
           </li>
-          <li class="nav__menu-item">
+          <li class="layout-bar__menu__item">
             <a href="../pages/portfolio.html" class="nav__menu-item__link">Portfolio</a>
           </li>
-          <li class="nav__menu-item">
+          <li class="layout-bar__menu__item">
             <a href="../pages/learn.html" class="nav__menu-item__link">Learn</a>
           </li>
-          <li class="nav__menu-item">
-            <a href="../pages/resources.html" class="nav__menu-item__link">Resources</a>
-          </li>
-        </ul>
+        </menu>
       </nav>
     </header>
     <main>
@@ -158,39 +153,38 @@
 
         </div>
       </section>
-      <section class="contact">
-
-          <h2 id="contact__title">Ready to Focus?</h2>
-          <h3 id="contact__subtitle">
-            You too can Learn Web Development! <br />
-            Don't be afraid to sign up today!
-          </h3>
-        <form action="" class="contact-form">
-          <h4 class="contact-form__header">
-            Apply now, limited seats available
-          </h4>
-          <div class="contact-form__info">
-            <input type="text" id="first-name" placeholder="First name" />
-            <input type="text" id="last-name" placeholder="Last name" />
+      <section class="layout-body" id="contact-section">
+        <div class="layout-body__center-column">
+            <h3 class="  hero__title">Ready to Focus?</h3>
+            <h4 class=" hero__title">
+              You too can Learn Web Development! <br />
+              Don't be afraid to sign up today!
+            </h4>
+          <div class="contact_form">
+            <form action="" class="contact-form">
+              <h4 class="contact-form__header">
+                Apply now, limited seats available
+              </h4>
+              <div class="contact-form__info">
+                <input type="text" id="first-name" placeholder="First name" />
+                <input type="text" id="last-name" placeholder="Last name" />
+              </div>
+              <div class="contact-form__info">
+                <input id="email" type="email" placeholder="Email adress" />
+              </div>
+              <textarea name="message-content" id="message-content" cols="30" rows="5">Enter message here
+              </textarea>
+              <button type="submit" class="contact-form__submit-buttton">
+                Send Email
+              </button>
+            </form>
           </div>
-          <div class="contact-form__info">
-            <input id="email" type="email" placeholder="Email adress" />
-          </div>
-          <textarea
-            name="message-content"
-            id="message-content"
-            cols="30"
-            rows="5"
-          >Enter message here
-          </textarea>
-          <button type="submit" class="contact-form__submit-buttton">
-            Send Email
-          </button>
-        </form>
+        </div>
+  
       </section>
     </main>
-    <footer>
-      <div class="logo">image</div>
+    <footer class="layout-bar layout__center-grid">
+      <div class="image">image</div>
       <div class="center">link link link</div>
       <span>this is a copyright</span>
     </footer>

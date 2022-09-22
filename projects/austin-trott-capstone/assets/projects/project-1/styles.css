@@ -14,7 +14,10 @@
 *{
     box-sizing:border-box;  margin:0; 
     font-size:1rem;  font-family:Cairo, Roboto, Inter, Segoe ui, sans-serif;
-}   
+}  
+*::-webkit-scrollbar {
+    display:none;
+} 
 body{
     min-width:320px;  width:100%;
     background-color:var(--bone);
