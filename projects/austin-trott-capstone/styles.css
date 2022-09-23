@@ -4,11 +4,13 @@
   font-family: cursive;
   margin: 0;
 }
+
 :root {
   --primary-color: #efefef;
   --secondary-color: rgb(255, 255, 255);
   --dark-color: rgb(203, 190, 171);
 }
+
 header {
   padding: 0.5rem;
   width: 100%;
@@ -16,6 +18,7 @@ header {
   min-height: 5rem;
   background-color: var(--dark-color);
 }
+
 body {
   background-color: rgb(143, 127, 127);
 }
@@ -27,6 +30,7 @@ section {
   padding: 1.5rem;
   background-color: var(--primary-color);
 }
+
 footer {
   padding: 0.5rem;
   height: 10vh;
@@ -34,38 +38,47 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
 /* ===== || TEXT STYLING || ===== */
 h1 {
   font-size: 3rem;
 }
+
 h2 {
   font-size: 2.5rem;
 }
+
 h3 {
   font-size: 1.5rem;
 }
+
 h4 {
   font-size: 1.2rem;
 }
+
 p {
   margin-top: 0.5rem;
   margin-bottom: 0.25rem;
 }
+
 a,
 a:link {
   text-decoration: none;
   font-weight: bold;
 }
+
 .title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
+
 .subtitle {
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
 }
+
 code {
   font-family: monospace;
 }
@@ -73,6 +86,7 @@ code {
 li {
   list-style: none;
 }
+
 iframe {
   border: none;
   padding-bottom: 1rem;
@@ -80,6 +94,7 @@ iframe {
   width: 100%;
   overflow-x: hidden;
 }
+
 iframe::-webkit-scrollbar {
   display: none;
 }
@@ -92,6 +107,7 @@ iframe::-webkit-scrollbar {
   border-radius: 8px;
   max-width: 10rem;
 }
+
 /* ================================== || Utilities || ================================== */
 
 /* ===== || Animations ||  ===== */
@@ -99,10 +115,12 @@ iframe::-webkit-scrollbar {
   position: relative;
   animation: animatefade 0.4s;
 }
+
 @keyframes animatefade {
   from {
     opacity: 0.5;
   }
+
   to {
     opacity: 1;
   }
@@ -113,30 +131,35 @@ iframe::-webkit-scrollbar {
 .shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .image {
   background-color: #e5e5f7;
-  opacity: 0.8;
-  background: radial-gradient(
-      circle,
+  background: radial-gradient(circle,
       transparent 20%,
       #e5e5f7 20%,
       #e5e5f7 80%,
       transparent 80%,
-      transparent
-    ),
-    radial-gradient(
-        circle,
-        transparent 20%,
-        #e5e5f7 20%,
-        #e5e5f7 80%,
-        transparent 80%,
-        transparent
-      )
-      100px 100px,
+      transparent),
+    radial-gradient(circle,
+      transparent 20%,
+      #e5e5f7 20%,
+      #e5e5f7 80%,
+      transparent 80%,
+      transparent) 100px 100px,
     linear-gradient(#444cf7 8px, transparent 8px) 0 -4px,
     linear-gradient(90deg, #444cf7 8px, #e5e5f7 8px) -4px 0;
   background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
   border: 1px solid black;
+  overflow: hidden;
+}
+.icon{
+  height:5rem;
+  width:5rem;
+}
+img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
 }
 /* ===== || grid layouts || ===== */
 
@@ -149,9 +172,11 @@ iframe::-webkit-scrollbar {
   justify-content: center;
   align-content: center;
 }
+
 .layout-bar__title {
   grid-column: span 6;
 }
+
 .layout-bar__nav {
   display: grid;
   grid-auto-flow: column;
@@ -161,12 +186,15 @@ iframe::-webkit-scrollbar {
   align-self: end;
   grid-column: span 3;
 }
+
 .layout-bar__menu {
   display: contents;
 }
+
 .layout-bar__menu__item {
   justify-self: center;
 }
+
 .layout-body {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -174,14 +202,21 @@ iframe::-webkit-scrollbar {
   gap: 0.5em 0.5em;
   grid-auto-flow: row;
 }
+
 .layout-body__column-30 {
   grid-column: span 3;
   grid-row: span 6;
 }
+
 .layout-body__column-40 {
   grid-column: span 4;
   grid-row: span 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .layout-body__column-50 {
   grid-column: span 5;
   grid-row: span 6;
@@ -190,27 +225,37 @@ iframe::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
 }
+
 .layout-body__column-60 {
   grid-column: span 6;
   grid-row: span 6;
 }
+
 .layout-body__card {
   grid-column: span 5;
   grid-row: span 2;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 .layout-body__gallery {
   grid-column: span 5;
   grid-row: span 3;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .gallery__grid {
+  grid-column: span 5;
+  grid-row: span 3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1em 1em;
 }
+
 .layout-body__center-column {
   grid-area: 1 / 4 / 7 / 8;
   display: flex;
@@ -218,16 +263,20 @@ iframe::-webkit-scrollbar {
   justify-content: space-around;
   align-items: center;
 }
+
 .layout-body__center-column__half {
   grid-area: 1 / 4 / 3 / 8;
 }
+
 .contact_form {
   grid-area: 3 / 4 / 7 / 8;
 }
+
 .layout__center-grid {
   justify-items: center;
   align-items: center;
 }
+
 /* ===== || Sections || ===== */
 .hero {
   width: 100%;
@@ -235,39 +284,125 @@ iframe::-webkit-scrollbar {
   margin: 0;
   padding: 0;
 }
+
 .sub-hero {
   height: 60vh;
 }
+
 .body-showcase {
   height: 80vh;
 }
+
 .body-cards {
   min-height: 35rem;
 }
+
 .body-gallery {
   min-height: 35rem;
 }
+
 .body-contact {
-  height: 80vh;
-  min-height: 34rem;
+  height: 60vh;
+
 }
+
 /* ================================== || Components || ================================== */
 /* ===== || display card - DP-Card || ===== */
 .dp-card {
   height: 100%;
   width: 100%;
-  position: relative;
   border: 1px solid black;
   overflow: hidden;
 }
-.dp-card:hover .dp-card__overlay {
+
+
+/* ===== || display card tabs || ===== */
+.tabs__menu {
+  background-color: bisque;
+}
+
+.tabs__button {
+  background-color: brown;
+  border-radius: 0px;
+}
+
+.tabs__button:active {
+  background-color: aqua;
+}
+
+.tabs__button--active {
+  font-weight: bold;
+  background-color: blueviolet;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__content--active {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: darkgray;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.tabs__content--active::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===== || gallery preview card || ===== */
+.preview-card {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+
+}
+
+.preview-card:hover .preview-card__overlay {
   opacity: 1;
 }
-.dp-card__overlay {
+
+.preview-card__content {
+  display: none;
+}
+
+.preview-card__content--active {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: block;
+
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background: radial-gradient(circle,
+      transparent 20%,
+      #e5e5f7 20%,
+      #e5e5f7 80%,
+      transparent 80%,
+      transparent),
+    radial-gradient(circle,
+      transparent 20%,
+      #e5e5f7 20%,
+      #e5e5f7 80%,
+      transparent 80%,
+      transparent) 100px 100px,
+    linear-gradient(#444cf7 8px, transparent 8px) 0 -4px,
+    linear-gradient(90deg, #444cf7 8px, #e5e5f7 8px) -4px 0;
+  background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+  border: 1px solid black;
+}
+
+.preview-card__overlay {
   position: absolute;
   bottom: 0;
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
   color: #f1f1f1;
   width: 100%;
   transition: 0.5s ease;
@@ -279,58 +414,27 @@ iframe::-webkit-scrollbar {
 }
 
 
-/* ===== || display card tabs || ===== */
-.tabs__menu {
-  background-color: bisque;
-}
-.tabs__button {
-  background-color: brown;
-  border-radius: 0px;
-}
-.tabs__button:active {
-  background-color: aqua;
-}
-.tabs__button--active {
-  font-weight: bold;
-  background-color: blueviolet;
-}
-.tabs__content {
-  display: none;
-}
-.tabs__content--active {
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-color: darkgray;
-  overflow: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-.tabs__content--active::-webkit-scrollbar {
-  display: none;
-}
 /* ===== || Contact-form || ===== */
+
 .contact-form {
+  width:100%;
   border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .contact-form__header {
   font-weight: bold;
 }
 
-.contact-form__info {
-}
+.contact-form__info {}
 
-.contact-form__email {
-}
+.contact-form__email {}
 
-.contact-form__message {
-}
+.contact-form__message {}
 
-.contact-form__submit-button {
-}
+.contact-form__submit-button {}
