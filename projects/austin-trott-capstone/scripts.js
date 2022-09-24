@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
 /* new concept -- clickable tabs */
-
-
 /* ======== display card setup tabs function ========== */
-
 
 function setupTabs() {
   document.querySelectorAll(".tabs__button").forEach(button => {
@@ -31,40 +21,38 @@ function setupTabs() {
   });
 }
 
+/* ======== display card setup gallery function ========== */
+
+function setupGallery() {
+  document.querySelectorAll(".thumbnail").forEach(thumbnail => {
+    thumbnail.addEventListener("click", () => {
+      const gallery = thumbnail.parentElement;
+      const previewsContainer = gallery.parentElement;
+      const previewNumber = thumbnail.dataset.forPreview;
+      const previewToActivate = previewsContainer.querySelector(`.preview-card .preview-card__content[data-preview="${previewNumber}"]`);
+
+      gallery.querySelectorAll(".thumbnail").forEach(thumbnail => {
+        thumbnail.classList.remove("thumbnail--active");
+      });
+      previewsContainer.querySelectorAll(".preview-card .preview-card__content").forEach(preview => {
+        preview.classList.remove("preview-card__content--active");
+      });
+      thumbnail.classList.add("thumbnail--active");
+      previewToActivate.classList.add("preview-card__content--active");
+    });
+  });
+}
+/* ============ run tab and gallery scripts ================ */
+
 document.addEventListener("DOMContentLoaded", () => {
   setupTabs();
+  setupGallery();
 
   document.querySelectorAll(".dp-card").forEach(tabsContainer => {
     tabsContainer.querySelector(".tabs__menu .tabs__button").click();
   });
-});
-
-/* ======== display card setup tabs function ========== */
-function setupGallery() {
-  document.querySelectorAll(".thumbnail").forEach(button => {
-    button.addEventListener("click", () => {
-      const menu = button.parentElement;
-      const tabsContainer = menu.parentElement;
-      const tabNumber = button.dataset.forPreview;
-      const tabToActivate = tabsContainer.querySelector(`.preview-card .preview-card__content[data-preview="${tabNumber}"]`);
-
-      menu.querySelectorAll(".thumbnail").forEach(button => {
-        button.classList.remove("thumbnail--active");
-      });
-      tabsContainer.querySelectorAll(".preview-card .preview-card__content").forEach(tab => {
-        tab.classList.remove("preview-card__content--active");
-      });
-      button.classList.add("thumbnail--active");
-      tabToActivate.classList.add("preview-card__content--active");
-    });
-  });
-}
-document.addEventListener("DOMContentLoaded", () => {
-  setupGallery();
-
-  document.querySelectorAll("body-gallery").forEach(tabsContainer => {
-    tabsContainer.querySelector(".gallery__grid .thumbnail").click();
+  document.querySelectorAll("body-gallery").forEach(previewsContainer => {
+    previewsContainer.querySelector(".gallery__grid .thumbnail").click();
   });
 });
-
 
